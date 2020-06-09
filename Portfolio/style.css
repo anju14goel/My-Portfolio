@@ -1,0 +1,116 @@
+h1 {
+    color: white;
+}
+
+.para {
+    color: white;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+
+.footer{
+    display:flex;
+    justify-content:flex-end;
+}
+
+p,h2{
+    text-align:center;
+}
+
+body{
+    background: linear-gradient(to right,violet,indigo,blue,green,yellow,orange,red );
+}
+body ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+      
+}
+
+.menu {
+    margin-right: 30px;
+}
+.menu a{
+    margin-left: 20px;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
+
+.edit {
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+      
+}
+.edit li{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+.edit li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.edit :hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+.edit li a:hover {
+    transform: scale(1.5);
+    opacity: 0.33;
+    filter: blur(0);
+    
+}
+.edit li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff497c;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+.edit li a :hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.edit  p {
+    scale:(2);
+    position:relative;
+    right:5px;
+    bottom:135px;
+    opacity: 5;
+}
+.edit  p:hover {
+    scale: (4);
+    opacity: 1;
+}
